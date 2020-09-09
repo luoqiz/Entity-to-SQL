@@ -1,0 +1,35 @@
+<idea-plugin>
+    <id>top.luoqiz.idea.plugin</id>
+    <name>json2pojo</name>
+    <version>1.0</version>
+    <vendor email="luoqiangzheng@gmail.com" url="http://www.luoqiz.top">罗征科技</vendor>
+
+    <description>Generate entity classes from json files. eg. java</description>
+
+    <change-notes>
+        Generate SQL files from entity classes. eg. create
+    </change-notes>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="173.0"/>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.java</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="ConvertAction" class="top.luoqiz.idea.plugin.EntityToSQL" text="Entity to SQL"
+                description="Generator entity classes to sql">
+            <add-to-group group-id="ToolsMenu" />
+            <add-to-group anchor="after" group-id="ProjectViewPopupMenu"
+                          relative-to-action="ProjectViewPopupMenuRefactoringGroup"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="shift J"/>
+        </action>
+    </actions>
+
+</idea-plugin>
