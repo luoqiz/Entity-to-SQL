@@ -32,7 +32,7 @@ public class SqlGenerator {
 
         sb.append(String.format("\t`create_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP,\n"));
         sb.append(String.format("\t`update_time` timestamp NOT NULL ON UPDATE CURRENT_TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\n"));
-        sb.append(String.format("\tPRIMARY KEY (`id`)\n"));
+        sb.append(String.format("\tPRIMARY KEY (`id`) USING BTREE\n"));
         sb.append(String.format(") ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;"));
         return sb.toString();
     }
