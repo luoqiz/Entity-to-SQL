@@ -49,6 +49,11 @@ public class EntityToSQL extends AnAction {
         presentation.setEnabled(visible);
     }
 
+    /**
+     * 功能是否可用
+     * @param e
+     * @return
+     */
     private boolean isActionAvailable(AnActionEvent e) {
         VirtualFile file = getVirtualFiles(e);
         if (AnAction.getEventProject(e) != null && file != null) {

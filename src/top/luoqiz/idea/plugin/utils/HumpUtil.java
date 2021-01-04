@@ -1,6 +1,7 @@
 package top.luoqiz.idea.plugin.utils;
 
 /**
+ * 驼峰法转换
  * @author luoqiz
  */
 public class HumpUtil {

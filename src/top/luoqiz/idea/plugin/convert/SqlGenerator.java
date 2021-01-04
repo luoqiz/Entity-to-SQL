@@ -17,7 +17,7 @@ public class SqlGenerator {
 
     public String generateByString(Table table) {
         StringBuffer sb = new StringBuffer();
-        sb.append(String.format("CREATE TABLE %s (\n", table.getName()));
+        sb.append(String.format("CREATE TABLE `%s` (\n", table.getName()));
         sb.append(String.format("\t`id` bigint(20) NOT NULL,\n"));
 
         table.getColumns().forEach(column -> {

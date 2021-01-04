@@ -9,6 +9,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * 将类的数据类型转为sql的数据类型
  * @author luoqiz
  */
 public class Class2TableConverter {
@@ -34,7 +35,7 @@ public class Class2TableConverter {
         psiPrimitiveTypeMap.put(PsiType.INT, "INT");
         psiPrimitiveTypeMap.put(PsiType.LONG, "BIGINT");
         classTypeMap = new HashMap<>();
-        classTypeMap.put("java.lang.String", "VARCHAR(255)");
+        classTypeMap.put("java.lang.String", "VARCHAR(512)");
         classTypeMap.put("java.lang.Boolean", "TINYINT");
         classTypeMap.put("java.math.BigDecimal", "DECIMAL(10,2)");
         classTypeMap.put("java.util.Date", "DATETIME");

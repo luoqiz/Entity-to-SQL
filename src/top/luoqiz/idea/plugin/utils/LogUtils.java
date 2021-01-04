@@ -5,6 +5,7 @@ import com.intellij.notification.NotificationType;
 import com.intellij.notification.Notifications;
 
 /**
+ * 日志打印
  * @author luoqiz
  */
 public class LogUtils {

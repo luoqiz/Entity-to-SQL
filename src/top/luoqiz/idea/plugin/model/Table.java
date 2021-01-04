@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 读取的类文件信息
+ *
  * @author luoqiz
  */
 public class Table {
