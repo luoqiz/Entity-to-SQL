@@ -13,6 +13,10 @@ public class Column {
 
     private String comment;
 
+    private boolean primaryKey;
+
+    private boolean nullable = true;
+
     public String getType() {
         return type;
     }
@@ -35,5 +39,21 @@ public class Column {
 
     public void setComment(String comment) {
         this.comment = comment;
+    }
+
+    public boolean isPrimaryKey() {
+        return primaryKey;
+    }
+
+    public void setPrimaryKey(boolean primaryKey) {
+        this.primaryKey = primaryKey;
+    }
+
+    public boolean isNullable() {
+        return nullable;
+    }
+
+    public void setNullable(boolean nullable) {
+        this.nullable = nullable;
     }
 }

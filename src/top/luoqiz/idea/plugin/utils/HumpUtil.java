@@ -2,6 +2,7 @@ package top.luoqiz.idea.plugin.utils;
 
 /**
  * 驼峰法转换
+ *
  * @author luoqiz
  */
 public class HumpUtil {
@@ -54,17 +55,20 @@ public class HumpUtil {
                 }
             }
         }
+
+        String res = sb.toString().startsWith(separator) ? sb.substring(1) : sb.toString();
         if (capital) {
-            return sb.toString().toUpperCase();
+            return res.toUpperCase();
         } else {
-            return sb.toString().toLowerCase();
+            return res.toLowerCase();
         }
     }
 
     public static void main(String[] args) {
-        String  ss = humpToUnderline("picType", false);
+        String ss = humpToUnderline("Type", false);
         System.out.println(ss);
-        String sss = underlineToHump(ss);
+        String underlineString = "_abc_type";
+        String sss = underlineToHump(underlineString);
         System.out.println(sss);
     }
 }

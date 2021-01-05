@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>top.luoqiz.idea.plugin</id>
     <name>Entity to SQL</name>
-    <version>1.0</version>
+    <version>1.1</version>
     <vendor email="luoqiangzheng@gmail.com" url="http://www.luoqiz.top">罗征科技</vendor>
 
     <description>Generate entity classes from json files. eg. java</description>
